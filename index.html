@@ -181,7 +181,93 @@
                         <p class="fragment">The <span class="fancy">&lt;section&gt;</span> and <span class="fancy">&lt;article&gt;</span> tags are new in HTML5.</p>
                     </section>  
                 </section>
-
+                <section>
+                    <section>
+                        <h3>Links</h3>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="gojxF" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;p&gt;This is a &lt;a href=&quot;www.google.com&quot;&gt;link&lt;/a&gt;&lt;/p&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/gojxF/'>gojxF</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                        <p class="fragment">In HTML, links are defined with the <span class="fancy">&lt;a&gt;</span> tag.</p>
+                    </section>
+                    <section>
+                        <h3>Links - Colors and Icons</h3>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="KJCut" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;p&gt;This is a &lt;a href=&quot;www.google.com.br&quot;&gt;link&lt;/a&gt;&lt;/p&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/KJCut/'>KJCut</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                        <p class="fragment">The link can be styled.</p>
+                    </section>
+                    <section>
+                        <h3>Links - Relative Address</h3>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="rmlJc" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;p&gt;This is a link to the relative address, to page home:  &lt;a href=&quot;home.htm&quot;&gt;Home&lt;/a&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/rmlJc/'>rmlJc</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                        <p class="fragment">The relative address is the information for the location of the resource from the current page.</p>
+                    </section>
+                    <section>
+                        <h3>Links - Types of Links</h3>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="IpbLE" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;p&gt;This is an email link:&lt;/p&gt;&lt;a href=&quot;mailto:someone@example.com?Subject=Hello%20again&quot; target=&quot;_top&quot;&gt;
+                        Send Mail&lt;/a&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/IpbLE/'>IpbLE</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                        <p class="fragment">There are some types of links, including the type of <span class="fancy">mailto</span></p>
+                    </section>
+                </section>
+                <section>
+                    <h3>&lt;div&gt;</h3>
+                    <p class="fragment">The <span class="fancy">&lt;div&gt;</span> tag defines a division or a section in an HTML document.</p>
+                    <p class="fragment">The <span class="fancy">&lt;div&gt;</span> tag is used to group block-elements to format them with CSS.</p>
+                </section>
+                <section>
+                    <h3>&lt;span&gt;</h3>
+                    <p class="fragment">The <span class="fancy">&lt;span&gt;</span> tag is used to group inline-elements in a document.</p>
+                    <p class="fragment">The <span class="fancy">&lt;span&gt;</span> tag provides no visual change by itself.
+                    <p class="fragment">The <span class="fancy">&lt;span&gt;</span> tag provides a way to add a hook to a part of a text or a part of a document.</p>
+                </section>
+                <section>
+                    <section>
+                        <h3>Images</h3>
+                        <p class="fragment">In HTML, images are defined with the <span class="fancy">&lt;img&gt;</span> tag.</p>
+                        <p class="fragment">The <span class="fancy">&lt;img&gt;</span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+                        <p class="fragment">The <span class="fancy">src</span> attribute defines the url (web address) of the image:</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;img src="url"&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>some attributes of tag &lt;img&gt;</h3>
+                        <p>The <span class="fancy">alt</span> attribute specifies an alternate text for the image, if it cannot be displayed.</p>
+                        <p>The value of the <span class="fancy">alt</span> attribute should describe the image in words:</p>
+                         <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;img src="html5.gif" alt="The official HTML5 Icon"&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>some attributes of tag &lt;img&gt;</h3>
+                        <p>You can use the <span class="fancy">style</span> attribute to specify the <span class="fancy">width</span> and <span class="fancy">height</span> of an image.</p>
+                        <p>The values are specified in pixels (use px after the value):</p>
+                         <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px"&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>some attributes of tag &lt;img&gt;</h3>
+                        <p>Alternatively, you can use <span class="fancy">width</span> and <span class="fancy">height</span> attributes.</p>
+                        <p>The values are specified in pixels (without px after the value):</p>
+                         <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128""&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Image as Link</h3>
+                        <p class="fragment">It is common to use images as links:</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;a href="default.asp"&gt;
+  &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0"&gt;
+&lt;/a&gt;
+                        </code></pre>
+                    </section>
+                 </section>
+                
                 <!-- Example of nested vertical slides -->
                 <section>
                     <section>
