@@ -237,7 +237,7 @@
                         <p class="fragment">In HTML, images are defined with the <span class="fancy">&lt;img&gt;</span> tag.</p>
                         <p class="fragment">The <span class="fancy">&lt;img&gt;</span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
                         <p class="fragment">The <span class="fancy">src</span> attribute defines the url (web address) of the image:</p>
-                        <pre><code data-trim contenteditable style="padding: 20px;">
+                        <pre class="fragment"><code data-trim contenteditable style="padding: 20px;">
 &lt;img src="url"&gt;
                         </code></pre>
                     </section>
@@ -245,7 +245,7 @@
                         <h3>some attributes of tag &lt;img&gt;</h3>
                         <p>The <span class="fancy">alt</span> attribute specifies an alternate text for the image, if it cannot be displayed.</p>
                         <p>The value of the <span class="fancy">alt</span> attribute should describe the image in words:</p>
-                         <pre><code data-trim contenteditable style="padding: 20px;">
+                         <pre class="fragment"><code data-trim contenteditable style="padding: 20px;">
 &lt;img src="html5.gif" alt="The official HTML5 Icon"&gt;
                         </code></pre>
                     </section>
@@ -253,7 +253,7 @@
                         <h3>some attributes of tag &lt;img&gt;</h3>
                         <p>You can use the <span class="fancy">style</span> attribute to specify the <span class="fancy">width</span> and <span class="fancy">height</span> of an image.</p>
                         <p>The values are specified in pixels (use px after the value):</p>
-                         <pre><code data-trim contenteditable style="padding: 20px;">
+                         <pre class="fragment"><code data-trim contenteditable style="padding: 20px;">
 &lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px"&gt;
                         </code></pre>
                     </section>
@@ -261,14 +261,14 @@
                         <h3>some attributes of tag &lt;img&gt;</h3>
                         <p>Alternatively, you can use <span class="fancy">width</span> and <span class="fancy">height</span> attributes.</p>
                         <p>The values are specified in pixels (without px after the value):</p>
-                         <pre><code data-trim contenteditable style="padding: 20px;">
+                         <pre class="fragment"><code data-trim contenteditable style="padding: 20px;">
 &lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128""&gt;
                         </code></pre>
                     </section>
                     <section>
                         <h3>Image as Link</h3>
                         <p class="fragment">It is common to use images as links:</p>
-                        <pre><code data-trim contenteditable style="padding: 20px;">
+                        <pre class="fragment"><code data-trim contenteditable style="padding: 20px;">
 &lt;a href="default.asp"&gt;
   &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0"&gt;
 &lt;/a&gt;
@@ -338,7 +338,7 @@
                     </section>
                     <section>
                         <h3>Table Attributes</h3>
-                        <p class="fragment"><span class="fancy">Colspan:</span> To make a cell span more than one column, use the <span class="fancy">colspan</span> attribute:</p>
+                        <p><span class="fancy">Colspan:</span> To make a cell span more than one column, use the <span class="fancy">colspan</span> attribute:</p>
                         <div data-height="350" data-theme-id="9285" data-slug-hash="IECjo" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;table style=&quot;width:100%&quot;&gt;
                           &lt;tr&gt;
                             &lt;th&gt;Name&lt;/th&gt;
@@ -355,7 +355,7 @@
                     </section>
                     <section>
                         <h3>Table Attributes</h3>
-                        <p class="fragment"><span class="fancy">Rowspan:</span> To make a cell span more than one row, use the <span class="fancy">rowspan</span> attribute:</p>
+                        <p><span class="fancy">Rowspan:</span> To make a cell span more than one row, use the <span class="fancy">rowspan</span> attribute:</p>
                         <div data-height="350" data-theme-id="9285" data-slug-hash="wKLuC" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;table style=&quot;width:100%&quot;&gt;
                           &lt;tr&gt;
                             &lt;th&gt;First Name:&lt;/th&gt;
@@ -371,6 +371,203 @@
                         &lt;/table&gt;</code></pre>
                         <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/wKLuC/'>wKLuC</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
                         </div><script async src="http://codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                 </section>
+                 <section>
+                    <section>
+                        <h3>Forms</h3>
+                        <p class="fragment">HTML forms are used to pass data to a server.</p>
+                        <p class="fragment">An HTML <span class="fancy">&lt;form&gt;</span> can contain input elements like text fields, checkboxes, radio-buttons, submit buttons and more. A <span class="fancy">&lt;form&gt;</span> can also contain select lists, textarea, fieldset, legend, and label elements.</p>
+                        <p class="fragment">The <span class="fancy">&lt;form&gt;</span> tag is used to create an HTML <span class="fancy">&lt;form&gt;</span>:</p>
+                        <pre class="fragment"><code data-trim contenteditable style="padding: 20px;">
+&lt;form&gt;
+.
+input elements
+.
+&lt;/form&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Form - The Input Element</h3>
+                        <p class="fragment">The most important <span class="fancy">form</span> element is the <span class="fancy">&lt;input&gt;</span> element.</p>
+                        <p class="fragment">The <span class="fancy">&lt;input&gt;</span> element is used to select user information.</p>
+                        <p class="fragment">An <span class="fancy">&lt;input&gt;</span> element can vary in many ways, depending on the type attribute. An <span class="fancy">&lt;input&gt;</span> element can be of type text field, checkbox, password, radio button, submit button, and more.</p>
+                        <p class="fragment">The most common <span class="fancy">input</span> types are described below.</p>
+                    </section>
+                    <section>
+                        <h3>Text Fields</h3>
+                        <p><span class="fancy">&lt;input type="text"&gt;</span> defines a one-line input field that a user can enter text into:</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="ynArH" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form&gt;
+                        First name: &lt;input type=&quot;text&quot; name=&quot;firstname&quot;&gt;&lt;br&gt;
+                        Last name: &lt;input type=&quot;text&quot; name=&quot;lastname&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/ynArH/'>ynArH</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script><p>
+                    </section>
+                    <section>
+                        <h3>Password Field</h3>
+                        <p><span class="fancy">&lt;input type="password"&gt;</span> defines a password field:</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="jarlv" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form&gt;
+                        Password: &lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/jarlv/'>jarlv</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Radio Buttons</h3>
+                        <p><span class="fancy">&lt;input type="radio"&gt;</span> defines a radio button. Radio buttons let a user select ONLY ONE of a limited number of choices:</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="hxzqb" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt;Male&lt;br&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;Female
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/hxzqb/'>hxzqb</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Checkboxes</h3>
+                        <p><span class="fancy">&lt;input type="checkbox"&gt;</span> defines a checkbox. Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="hxzqb" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt;Male&lt;br&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;Female
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/hxzqb/'>hxzqb</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Submit Button</h3>
+                        <p><span class="fancy">&lt;input type="submit"&gt;</span> defines a submit button.</p>
+                        <p>A submit button is used to send form data to a server. The data is sent to the page specified in the form's action attribute. The file defined in the action attribute usually does something with the received input:</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="ioIyk" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form name=&quot;input&quot; action=&quot;demo_form_action.asp&quot; method=&quot;get&quot;&gt;
+                        Username: &lt;input type=&quot;text&quot; name=&quot;user&quot;&gt;
+                        &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/ioIyk/'>ioIyk</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Selects</h3>
+                        <p>The <span class="fancy">&lt;select&gt;</span> element is used to create a drop-down list.</p>
+                        <p>The <span class="fancy">&lt;option&gt;</span> tags inside the <span class="fancy">&lt;select&gt;</span> element define the available options in the list.</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="iuGDs" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;select&gt;
+                        &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+                        &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
+                        &lt;option value=&quot;mercedes&quot;&gt;Mercedes&lt;/option&gt;
+                        &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+                        &lt;/select&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/iuGDs/'>iuGDs</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Textarea</h3>
+                        <p>The <span class="fancy">&lt;textarea&gt;</span> tag defines a multi-line text input control.</p>
+                        <p>A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).</p>
+                        <p>The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="rjsCv" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;textarea rows=&quot;4&quot; cols=&quot;50&quot;&gt;
+                        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+                        &lt;/textarea&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/rjsCv/'>rjsCv</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Input Types</h3>
+                        <p>HTML5 has several new input types for forms. These new features allow better input control and validation.</p>
+                        <p>This chapter covers the new input types:</p>
+                        <ul>
+                            <li>color</li>
+                            <li>date</li>
+                            <li>datetime</li>
+                            <li>datetime-local</li>
+                            <li>email</li>
+                            <li>month</li>
+                            <li>numember</li>
+                            <li>rage</li>
+                            <li>search</li>
+                            <li>tel</li>
+                            <li>time</li>
+                            <li>url</li>
+                            <li>week</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Examples of use</h3>
+                        <div data-height="268" data-theme-id="9314" data-slug-hash="BoIeb" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form&gt;
+                          &lt;p&gt;Type number&lt;/p&gt;Quantity:
+                          &lt;input type=&quot;number&quot; name=&quot;points&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;10&quot; value=&quot;30&quot;&gt;
+                        &lt;/form&gt;
+                        &lt;form&gt;
+                          &lt;p&gt;Type date&lt;/p&gt;Birthday:
+                          &lt;input type=&quot;date&quot; name=&quot;bday&quot;&gt;
+                        &lt;/form&gt;
+                        &lt;form&gt;
+                          &lt;p&gt;Type color&lt;/p&gt;Select your favorite color:
+                          &lt;input type=&quot;color&quot; name=&quot;favcolor&quot;&gt;
+                        &lt;/form&gt;
+                        &lt;form&gt;
+                          &lt;p&gt;Type range&lt;/p&gt;
+                          &lt;input type=&quot;range&quot; name=&quot;points&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;
+                        &lt;/form&gt;
+                        &lt;form&gt;
+                          &lt;p&gt;Type mail&lt;/p&gt;E-mail:
+                          &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+                        &lt;/form&gt;
+                        &lt;form&gt;
+                          &lt;p&gt;Type tel&lt;/p&gt;Telephone:
+                          &lt;input type=&quot;tel&quot; name=&quot;usrtel&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/BoIeb/'>BoIeb</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Other Attributes</h3>
+                        <p>An HTML form with <span class="fancy">autocomplete</span> on (and off for one input field):</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="kuzvd" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form action=&quot;demo_form.asp&quot; autocomplete=&quot;on&quot;&gt;
+                        First name:&lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;&lt;br&gt;
+                        Last name: &lt;input type=&quot;text&quot; name=&quot;lname&quot;&gt;&lt;br&gt;
+                        E-mail: &lt;input type=&quot;email&quot; name=&quot;email&quot; autocomplete=&quot;off&quot;&gt;&lt;br&gt;
+                        &lt;input type=&quot;submit&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/kuzvd/'>kuzvd</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script><p>
+                        <p>The <span class="fancy">novalidate</span> attribute is a boolean attribute.</p>
+                        <p>When present, it specifies that the form-data (input) should not be validated when submitted.</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="gHadD" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form action=&quot;demo_form.asp&quot; novalidate&gt;
+                        E-mail: &lt;input type=&quot;email&quot; name=&quot;user_email&quot;&gt;
+                        &lt;input type=&quot;submit&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/gHadD/'>gHadD</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                         <h3>Other Attributes</h3>
+                         <p>The <span class="fancy">placeholder</span> attribute specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short description of the expected format).</p>
+                         <div data-height="150" data-theme-id="9314" data-slug-hash="HnGmf" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form action=&quot;demo_form.asp&quot;&gt;
+                          &lt;input type=&quot;text&quot; name=&quot;fname&quot; placeholder=&quot;First name&quot;&gt;&lt;br&gt;
+                          &lt;input type=&quot;text&quot; name=&quot;lname&quot; placeholder=&quot;Last name&quot;&gt;&lt;br&gt;
+                          &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+                        &lt;/form&gt; </code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/HnGmf/'>HnGmf</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script><p>
+                        <p>The <span class="fancy">required</span> attribute is a boolean attribute.</p>
+                        <p>When present, it specifies that an input field must be filled out before submitting the form.</p>
+                        <div data-height="150" data-theme-id="9314" data-slug-hash="svqDu" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form action=&quot;demo_form.asp&quot;&gt;
+                        Username: &lt;input type=&quot;text&quot; name=&quot;usrname&quot; required&gt;
+                        &lt;input type=&quot;submit&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/svqDu/'>svqDu</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Other Attributes</h3>
+                        <p>The <span class="fancy">autofocus</span> attribute is a boolean attribute.</p>
+                        <p>When present, it specifies that an <span class="fancy">&lt;input&gt;</span> element should automatically get focus when the page loads.</p>
+                        <div data-height="268" data-theme-id="9314" data-slug-hash="LBEwq" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;form action=&quot;demo_form.asp&quot;&gt;
+                          First name: &lt;input type=&quot;text&quot; name=&quot;fname&quot; autofocus&gt;&lt;br&gt;
+                          Last name: &lt;input type=&quot;text&quot; name=&quot;lname&quot;&gt;&lt;br&gt;
+                          &lt;input type=&quot;submit&quot;&gt;
+                        &lt;/form&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/LBEwq/'>LBEwq</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+
                     </section>
                  </section>
                 <section>
