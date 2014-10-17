@@ -82,7 +82,7 @@
                 <section>
                     <section>
                         <h2>Arquivo .html</h2>
-                        <h3>Estrutura Basica</h3>
+                        <h3>Estrutura Básica</h3>
                         <pre><code data-trim contenteditable style="padding: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -180,6 +180,228 @@
                         <script async src="//codepen.io/assets/embed/ei.js"></script>
                         <p class="fragment">The <span class="fancy">&lt;section&gt;</span> and <span class="fancy">&lt;article&gt;</span> tags are new in HTML5.</p>
                     </section>  
+                </section>
+                <section>
+                    <section>
+                        <img src="img/css3_cheat_sheet.jpg" height="429" width="500" style="background-color: white; border: none;">
+                    </section>
+                    <section>
+                        <h3 style="line-height: 60px;">Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.</h3>
+                        <ul>
+                            <li class="fragment">Styles define how to display HTML elements</li>
+                            <li class="fragment">Styles were added to HTML 4.0 to solve a problem</li>
+                            <li class="fragment">External Style Sheets can save a lot of work</li>
+                            <li class="fragment">External Style Sheets are stored in CSS files</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Estrutura Básica</h3>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+Seletor {
+    propriedade : valor ;
+    propriedade : valor ;
+    propriedade : valor ;
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Inline CSS</h3>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;div style=&quot;width: 200px; height: 200px; border-radius: 6px; display: block;&quot;&gt;
+    &lt;!-- mais html --&gt;
+&lt;div&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Embendded CSS</h3>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;!-- Título da Página --&gt;&lt;/title&gt;
+        &lt;style&gt;
+            body {
+                background-color: linen;
+            }
+            h1 {
+                color: maroon;
+                margin-left: 40 px;
+            } 
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Corpo da Página --&gt;
+    &lt;/body&gt;   
+&lt;/html&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>CSS Externo</h3>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;!-- Título da Página --&gt;&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../css/stylesheet.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Corpo da Página --&gt;
+    &lt;/body&gt;   
+&lt;/html&gt;
+                        </code></pre>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40 px;
+} 
+                        </code></pre>
+                    </section>
+                </section>
+                <!-- <br><div class="fragment"><p><span class="fancy"></span></p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+
+                        </code></pre></div> -->
+                <section>
+                    <section>
+                        <h2>Seletores CSS</h2>
+                    </section>
+                    <section>
+                        <p>Seletor Universal <span class="fancy">*</span></p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+* {
+    margin : 0px ;
+    color : blue ;
+}
+                        </code></pre>
+                        
+                        <br><div class="fragment"><p><span class="fancy">.Class</span> Seleciona todos os elementos com determinada classe</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+.msg-box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+}
+                        </code></pre></div>
+
+                        <br><div class="fragment"><p><span class="fancy">#Id</span> Seleciona o elemento com determinada id</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+#news {
+    float: left;
+    position: absolute;
+    display: inline;
+}
+                        </code></pre></div>
+                    </section>
+                    <section>
+                        <div><p><span class="fancy">tag</span> Seleciona todos os elementos da tag.</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+p {
+    color: red;
+}
+                        </code></pre></div>
+                        <br><div class="fragment"><p><span class="fancy">tag1, tag2 </span>Seleciona todos os elementos da lista.</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+div, .box, #comentario {
+    font-size: 20px;
+    font-family: arial;
+}
+                        </code></pre></div>
+                        <pre class="fragment"><code data-trim contenteditable style="padding: 20px;">
+div {
+    font-size: 20px;
+    font-family: arial;
+}
+.box {
+    font-size: 20px;
+    font-family: arial;
+}
+#comentario {
+    font-size: 20px;
+    font-family: arial;
+}
+                    </code></pre>
+                    </section>
+                    <section>
+                        <div><p><span class="fancy">tag1 tag2 </span>Seleciona todos os tag2 dentro de tag1.</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+.msg-box p {
+    color: pink;
+    text-align: center;
+}
+                        </code></pre></div>
+                        <br><div class="fragment"><p><span class="fancy">tag1 > tag2 </span>Seleciona todos os tag2 que são filhos de tag1.</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+#menu > div {
+    width: 100px;
+    margin-top: 20px;
+}
+                        </code></pre></div>
+                        <br><div class="fragment"><p><span class="fancy">tag1 + tag2 </span>Seleciona todos os tag2 ques estão imediatamente depois de tag1.</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+.title + .subtitle{
+    color: #777;
+    font-wheight: bold;
+}
+                        </code></pre></div>
+                    </section>
+                    <section>
+                        <div><p><span class="fancy">tag1 ~ tag2</span> Seleciona todos os tag2 que apareceram depois de pelo menos um tag1</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+p ~ ul {
+    background: #ff0000;
+}
+                        </code></pre></div>
+                        <div class="fragment"><p><span class="fancy">tag:active</span> Seleciona um elemento ativo</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+a {
+    background-color: blue;
+}
+a:active {
+    background-color: yellow;
+}
+                        </code></pre></div>
+                        <div class="fragment"><p><span class="fancy">tag:hover</span> Seleciona o elemento quando o mouse está em cima dele</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+div {
+    width: 70px;
+}
+div:hover {
+    width: 100px;
+}
+                        </code></pre></div>
+                    </section>
+                    <section>
+                        <p><span class="fancy">tag:first-child</span> Selecionam as tag que sejam a primeira filha de seus pais</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+.box:first-child {
+    background-color: red;
+    color: grey;
+}
+                        </code></pre>
+
+                        <br><div class="fragment"><p><span class="fancy">tag:Last-Child</span> Seleciona as tag que são a ultima filha de seus pais</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+.box:last-child {
+    background-color: red;
+    color: grey;
+}
+                        </code></pre></div>
+
+                        <br><div class="fragment"><p><span class="fancy">tag:nth-child(x)</span>Seleciona o elemento tag que é filha de número x</p>
+                        <pre><code data-trim contenteditable style="padding: 20px;">
+.box:nth-child(10) {
+    background-color: red;
+    color: grey;
+}
+                        </code></pre></div>
+                    </section>
+                    <section>
+                            <h2>Acesse a lista completas de seletores <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">aqui!</a></h2>
+                    </section>
                 </section>
 
                 <!-- Example of nested vertical slides -->
