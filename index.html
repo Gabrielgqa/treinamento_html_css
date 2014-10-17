@@ -267,6 +267,104 @@
                         </code></pre>
                     </section>
                  </section>
+                 <section>
+                    <section>
+                        <h3>&lt;table&gt;</h3>
+                        <p class="fragment">Tables are defined with the <span class="fancy">&lt;table&gt;</span> tag.</p>
+                        <p class="fragment">Tables are divided into table rows with the <span class="fancy">&lt;tr&gt;</span>tag.</p>
+                        <p class="fragment">Table rows are divided into table data with the <span class="fancy">&lt;td&gt;</span> tag.</p>
+                        <p class="fragment">A table row can also be divided into table headings with the <span class="fancy">&lt;th&gt;</span>tag.</p><span class="fancy">
+                    </section>
+                    <section>
+                        <h3>Example</h3>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="Izrad" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;table&gt;
+                          &lt;tr&gt;
+                            &lt;th&gt;Firstname&lt;/th&gt;
+                            &lt;th&gt;Lastname&lt;/th&gt; 
+                            &lt;th&gt;Points&lt;/th&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;Eve&lt;/td&gt;
+                            &lt;td&gt;Jackson&lt;/td&gt; 
+                            &lt;td&gt;94&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;Ada&lt;d&gt;
+                            &lt;td&gt;Jackson&lt;/td&gt; 
+                            &lt;td&gt;78&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/Izrad/'>Izrad</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>&lt;thead&gt;, &lt;tfoot&gt;, and a &lt;tbody&gt;</h3>
+                        An HTML table with a <span class="fancy">&lt;thead&gt;</span>, <span class="fancy">&lt;tfoot&gt;</span>, and a <span class="fancy">&lt;tbody&gt;</span> element:
+                        <p></p>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="Aockd" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;table&gt;
+                          &lt;thead&gt;
+                            &lt;tr&gt;
+                              &lt;th&gt;Month&lt;/th&gt;
+                              &lt;th&gt;Savings&lt;/th&gt;
+                            &lt;/tr&gt;
+                          &lt;/thead&gt;
+                          &lt;tfoot&gt;
+                            &lt;tr&gt;
+                              &lt;td&gt;Sum&lt;/td&gt;
+                              &lt;td&gt;$180&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/tfoot&gt;
+                          &lt;tbody&gt;
+                            &lt;tr&gt;
+                              &lt;td&gt;January&lt;/td&gt;
+                              &lt;td&gt;$100&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td&gt;February&lt;/td&gt;
+                              &lt;td&gt;$80&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/tbody&gt;
+                        &lt;/table&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/Aockd/'>Aockd</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Table Attributes</h3>
+                        <p class="fragment"><span class="fancy">Colspan:</span> To make a cell span more than one column, use the <span class="fancy">colspan</span> attribute:</p>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="IECjo" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;table style=&quot;width:100%&quot;&gt;
+                          &lt;tr&gt;
+                            &lt;th&gt;Name&lt;/th&gt;
+                            &lt;th colspan=&quot;2&quot;&gt;Telephone&lt;/th&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;Bill Gates&lt;/td&gt;
+                            &lt;td&gt;555 77 854&lt;/td&gt;
+                            &lt;td&gt;555 77 855&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/IECjo/'>IECjo</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Table Attributes</h3>
+                        <p class="fragment"><span class="fancy">Rowspan:</span> To make a cell span more than one row, use the <span class="fancy">rowspan</span> attribute:</p>
+                        <div data-height="350" data-theme-id="9314" data-slug-hash="wKLuC" data-default-tab="html" data-user="Gabrielgqa" class='codepen'><pre><code>&lt;table style=&quot;width:100%&quot;&gt;
+                          &lt;tr&gt;
+                            &lt;th&gt;First Name:&lt;/th&gt;
+                            &lt;td&gt;Bill Gates&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th rowspan=&quot;2&quot;&gt;Telephone:&lt;/th&gt;
+                            &lt;td&gt;555 77 854&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;555 77 855&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;</code></pre>
+                        <p>See the Pen <a href='http://codepen.io/Gabrielgqa/pen/wKLuC/'>wKLuC</a> by Gabriel Gomes (<a href='http://codepen.io/Gabrielgqa'>@Gabrielgqa</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div><script async src="//codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                 </section> 
                 
                 <!-- Example of nested vertical slides -->
                 <section>
